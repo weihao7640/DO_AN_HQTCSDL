@@ -39,8 +39,8 @@ namespace do_an.form
             this.lb_title = new System.Windows.Forms.Label();
             this.grB_thoiGian = new System.Windows.Forms.GroupBox();
             this.grB_phongBan = new System.Windows.Forms.GroupBox();
-            this.lb_phongBan = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lb_phongBan = new System.Windows.Forms.Label();
             this.txt_keysearch = new System.Windows.Forms.TextBox();
             this.btn_search = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Luong)).BeginInit();
@@ -145,6 +145,14 @@ namespace do_an.form
             this.grB_phongBan.TabStop = false;
             this.grB_phongBan.Text = "Lọc theo phòng ban";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(99, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(172, 24);
+            this.comboBox1.TabIndex = 1;
+            // 
             // lb_phongBan
             // 
             this.lb_phongBan.AutoSize = true;
@@ -153,14 +161,6 @@ namespace do_an.form
             this.lb_phongBan.Size = new System.Drawing.Size(77, 17);
             this.lb_phongBan.TabIndex = 0;
             this.lb_phongBan.Text = "Phòng ban";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(99, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 24);
-            this.comboBox1.TabIndex = 1;
             // 
             // txt_keysearch
             // 
@@ -193,6 +193,7 @@ namespace do_an.form
             this.Controls.Add(this.lb_title);
             this.Name = "DanhSachNghiPhep";
             this.Text = "DanhSachNghiPhep";
+            this.Load += new System.EventHandler(this.DanhSachNghiPhep_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Luong)).EndInit();
             this.grB_thoiGian.ResumeLayout(false);
             this.grB_thoiGian.PerformLayout();
