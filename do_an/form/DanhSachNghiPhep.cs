@@ -26,5 +26,10 @@ namespace do_an.form
             else
             { Home_admin f1 = new Home_admin(); Form1.homee.load_form(f1); }
         }
+
+        private void DanhSachNghiPhep_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
